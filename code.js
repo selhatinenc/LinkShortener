@@ -21,7 +21,7 @@ con.connect((err) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.post("/api/create-short-url", function (req, response) {
